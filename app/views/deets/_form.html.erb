@@ -1,0 +1,22 @@
+<%= form_with(model: deet) do |form| %>
+  <% if deet.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(deet.errors.count, "error") %> prohibited this deet from being saved:</h2>
+
+      <ul>
+        <% deet.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :content, style: "display: block" %>
+    <%= form.text_field :content %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
