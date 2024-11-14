@@ -1,0 +1,2 @@
+module SplunksHelper
+end

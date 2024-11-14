@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @splunk %>
+
+<div>
+  <%= link_to "Edit this splunk", edit_splunk_path(@splunk) %> |
+  <%= link_to "Back to splunks", splunks_path %>
+
+  <%= button_to "Destroy this splunk", @splunk, method: :delete %>
+</div>
