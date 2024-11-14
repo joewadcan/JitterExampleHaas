@@ -1,0 +1,2 @@
+class Jeet < ApplicationRecord
+end

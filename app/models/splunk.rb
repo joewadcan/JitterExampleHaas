@@ -1,0 +1,2 @@
+class Splunk < ApplicationRecord
+end

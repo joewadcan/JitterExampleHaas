@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Splunks</h1>
+
+<div id="splunks">
+  <% @splunks.each do |splunk| %>
+    <%= render splunk %>
+    <p>
+      <%= link_to "Show this splunk", splunk %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New splunk", new_splunk_path %>

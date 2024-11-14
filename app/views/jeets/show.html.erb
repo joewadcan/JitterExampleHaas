@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @jeet %>
+
+<div>
+  <%= link_to "Edit this jeet", edit_jeet_path(@jeet) %> |
+  <%= link_to "Back to jeets", jeets_path %>
+
+  <%= button_to "Destroy this jeet", @jeet, method: :delete %>
+</div>
